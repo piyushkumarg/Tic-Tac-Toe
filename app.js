@@ -205,8 +205,8 @@ function displayResult(player, status) {
             oPoints++;
         }
 
-        console.log(xPoints);
-        console.log(oPoints);
+        // console.log(xPoints);
+        // console.log(oPoints);
         document.getElementById('x-Points').innerHTML = `X: ${xPoints}`;
         document.getElementById('o-Points').innerHTML = `O: ${oPoints}`;
     }
@@ -247,6 +247,8 @@ function finalResult(id) {
         //reset the score
         xPoints=0;
         oPoints=0;
+        document.getElementById('x-Points').innerHTML = `X: 0`;
+        document.getElementById('o-Points').innerHTML = `O: 0`;
     }
     else {
         currentPlayer = Player1;
